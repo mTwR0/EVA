@@ -80,8 +80,9 @@ TLDR: I loop , one by one , through the excel documents and format them with  `C
   - After finishing each training data set, the model is evaluated on the validation data set to calculate the loss. This process helps to monitor and adjust the performance of the model during training.
 
 ### Used dataset
-Data set is question and answer pairs made by me . It is made specifically with this task in mind , and accounts for any operations I do in my code , and that are handled by the system .  
+Dataset is question and answer pairs made by me . It is made specifically with this task in mind , and accounts for any operations I do in my code , and that are handled by the system .  
 The data used to train the conversation model within the banking system is structured in a format that allows the model to learn to respond appropriately and coherently to various requests and questions from users.
+The data used are the `.csv` files.
 
 Data Structure:
 - Columns of the Data Set:
