@@ -24,7 +24,7 @@ If the user selects the option to chat with the EVA chatbot:
   - Stage 1: Description of the initial problem (eg "I lost my card").
   - Stage 2: The detailed conversation about the problem (eg "I last used it 2 days ago").
   - Stage 3: The last exchange of lines between the user and the chatbot.
-  - If the issue is not resolved after 4 interactions, this issue is considered unsolvable and the user input is replaced with a specific one to trigger a final response from the chatbot (eg "I want to speak to an employee responsible for the change personal data.").
+  - If the issue is not resolved after 4 interactions, this issue is considered unsolvable and the user input is replaced with a specific one to trigger a final response from the chatbot (eg "I want to speak to an employee responsible for personal data modifications.").
 - Various checks are implemented to ensure a consistent conversation flow:
   - If the user starts with an input that is similar to those in Stage 2, they are prompted to enter an input from Stage 1.
   - If the opening questions do not match any category, the user is guided to enter an appropriate opening question.
@@ -46,8 +46,8 @@ If the user selects the document summary option:
 
 ### Training process
 
-To develop and optimize the AI-based conversational model within the banking system, we followed a rigorous training methodology on specific data. This section details the process of training the model using structured datasets and specific techniques.
-To train the conversational model, we used a Python script that implements various critical functionalities:
+To develop and optimize the conversational model within the banking system, I followed a training methodology on specific data. The training script is schinbare_antrenare.py . The other trainign script blenderbot_training.py is done a bit differently and has worse results for my task . 
+
 
 - Implementation of the Conversational Dataset:
 - I defined a class to handle and process data from CSV files. It uses the tokenization provided by a specific tokenizer to prepare question and answer pairs for training.
