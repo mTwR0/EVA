@@ -25,7 +25,7 @@ def personal_info_check(category,lang):
             email = input("Enter your email: ")
             address = input("Enter your address: ")
       
-        directory = r'D:\EVA PROJECT\EVA_VENV\EVA\sistem bancar\utilizatori'
+        directory = r''
         
         for file in os.listdir(directory):
             if file.startswith('user_') and file.endswith('.txt'):
@@ -74,7 +74,7 @@ def personal_info_check(category,lang):
 
         
 
-        directory = r'D:\EVA PROJECT\EVA_VENV\EVA\sistem bancar\utilizatori'
+        directory = r''
         
         for file in os.listdir(directory):
             if file.startswith('user_') and file.endswith('.txt'):
@@ -112,7 +112,7 @@ def generate_report(file):
         print("Cannot generate report, account information not confirmed.")
         return
     
-    directory = r'D:\EVA PROJECT\EVA_VENV\EVA\sistem bancar\utilizatori'
+    directory = r''
     filepath = os.path.join(directory, file)
     
     if not os.path.exists(filepath):
@@ -164,7 +164,7 @@ def update_personal_info(category, file):
     elif category == 'update_phone_number':
         new_tel = input("Enter your new telephone number: ")
     
-    directory = r'D:\EVA PROJECT\EVA_VENV\EVA\sistem bancar\utilizatori'
+    directory = r''
     filepath = os.path.join(directory, file)
     
     with open(filepath, 'r') as f:
@@ -188,7 +188,7 @@ def delete_user_file(file):
         print("Cannot delete file, file name not provided.")
         return
     
-    directory = r'D:\EVA PROJECT\EVA_VENV\EVA\sistem bancar\utilizatori'
+    directory = r''
     filepath = os.path.join(directory, file)
     
     if not os.path.exists(filepath):
@@ -323,7 +323,7 @@ def reset_password(directory, email,stored_user_id):
     print("Email not found. Password reset failed.")
 
 def banking():
-    directory = r'D:\EVA PROJECT\EVA_VENV\EVA\sistem bancar\utilizatori'
+    directory = r''
     if not os.path.exists(directory):
         os.makedirs(directory)
     
