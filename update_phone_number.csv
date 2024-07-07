@@ -1,0 +1,45 @@
+responses,questions,stage,intent
+"Sure thing, let's get your phone number updated. ",My phone number has changed.,Stage_1,update_phone_number
+"Of course, updating your phone number is important. ",hello. i want to update my phone number.,Stage_1,update_phone_number
+I'd be happy to help with your phone number change. ,I need your help updating my phone number. ,Stage_1,update_phone_number
+"No problem, let's get your phone number updated. ",i need to change my phone number,Stage_1,update_phone_number
+"of couurse, let's change your phone number.",i wanna change my phone number from my bank info,Stage_1,update_phone_number
+"sure thing , i will help you through changing your phone number .",i'd like to change my phone number stored in the bank info,Stage_1,update_phone_number
+"no problem , let's change the phone number .",in the bank acocunt i have a phone number i don't use anymore. i'd like to change it,Stage_1,update_phone_number
+"Let's change your old phone number , and replace it with your new one.",i changed the phone number i currently use in my banking data,Stage_1,update_phone_number
+"sure thing , i will help you change your phone number .","i changed my phone number , and i want to remove the old one from my account .",Stage_1,update_phone_number
+"Very well , i will help you change your phone number.",i want to change my old phone number from my account,Stage_1,update_phone_number
+"Of course, let's help you replace your old phone number",i'd like to remove my old phone number from my account,Stage_1,update_phone_number
+Let's change your old phone number from the database then,i got a new phone and with it a new phone number,Stage_1,update_phone_number
+Sure thing ! I will assist you in the phone number change,i got myself a new phone . i need to change the old phone number in my account,Stage_1,update_phone_number
+Sure! Let's get started in changing your phone number.,i'd like to change my current phone number linked to my bank account,Stage_1,update_phone_number
+Your  info for the phone number update  has been confirmed.,"I understand , I will confirm any personal info.",Stage_2,update_phone_number
+I have confirmed your info .,I see. I will confirm whatever info you need,Stage_2,update_phone_number
+your info was confirmed by the system,no problems with that.,Stage_2,update_phone_number
+Just some information to determine if you are the owner of the account.,what info do i have to confirm,Stage_2,update_phone_number
+information to check your account ownership.,what should i confirm?,Stage_2,update_phone_number
+just some info to check if you own the account,what do i need to confirm?,Stage_2,update_phone_number
+info regarding your account . nothing too difficult.,confirm what info?,Stage_2,update_phone_number
+We need you to confirm if you are the owner of the account,What info do you need me to confirm,Stage_2,update_phone_number
+"We need to confirm your account ownership, that's all.",what info to confirm?,Stage_2,update_phone_number
+"All is good , let's continue","sure, let me confirm my info.",Stage_2,update_phone_number
+User confirmation completed . Let us proceed,"of course , i will confirm whatever you need",Stage_2,update_phone_number
+Let's proceed to the next step,sure thing,Stage_2,update_phone_number
+No issues arose . Let us proceed to the next step.,of course ,Stage_2,update_phone_number
+Thank you for your cooperation. Let us proceed,sure,Stage_2,update_phone_number
+Proceeding to the next step.,whatever you need,Stage_2,update_phone_number
+The info was confirmed by the system.,Very well. I will confirm anything you need.,Stage_2,update_phone_number
+"Info  was confirmed , thank you.",Okay.,Stage_2,update_phone_number
+Required information has been confirmed.,Very well . What info should I confirm?,Stage_2,update_phone_number
+"No problem , please use our services again.",thanks for your help,Stage_3,update_phone_number
+"Yes , the process was completed smoothly .",all is done?,Stage_3,update_phone_number
+The process was completed without issue.,is it complete?,Stage_3,update_phone_number
+The phone number was changed .,is it changed?,Stage_3,update_phone_number
+"Yes , it was changed . Thank you for using our services.",is my phone number changed ?,Stage_3,update_phone_number
+"No problem , always happy to help.",oh thanks for changing my phone number,Stage_3,update_phone_number
+"No issues, I will help whenever you need.",thanks for your help,Stage_3,update_phone_number
+Your phone number was sucessfully changed.,was my phone number changed ?,Stage_3,update_phone_number
+Always happy to help.,Thank you.,Stage_3,update_phone_number
+"If you need anything else , I will be at your service.",thanks,Stage_3,update_phone_number
+I'll investigate why the changes aren't reflecting in your account. Sorry for the delay. It should change in a few minutes.,I still see the old phone number in my account,Stage_3,update_phone_number
+I am very happy I could help you . Please do not hesitate to ask for help again in the future!,"Thank you, my information has been successfully updated.",Stage_3,update_phone_number

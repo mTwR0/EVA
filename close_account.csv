@@ -1,0 +1,61 @@
+responses,questions,stage,intent
+"I understand, closing your account is an important decision. Before we proceed, could you please provide me with the reason for closing your account?",I want to close my account.,Stage_1,close_account
+"Got it, let's initiate the account closure process for you. ",I no longer need the account.,Stage_1,close_account
+"Hello, I'm here to assist you with closing your account. I can send an account closing request for you.",hello. i want to close my account with you.,Stage_1,close_account
+"I understand , I will help you close your bank account.",i'm not using this bank account anymore.,Stage_1,close_account
+I will help you close your account . Could you tell me why you don't like our services anymore ?,i dont like your services anymore and i would like to close my account,Stage_1,close_account
+"I will assist you in closing your account if you wish . Before that , would you mind providing me with a reason why you don't like our services ?",i don't want to use your services anymore.,Stage_1,close_account
+I understand . I will help you close the bank account.,help me close  this bank account,Stage_1,close_account
+"Very well , let us proceed to the account closure.",i want to close my bank account.,Stage_1,close_account
+"If you don't mind providing a reasons for why you don't want to use this account anymore , we would appreciate it . I will help you close your account shortly.",i don't want to use this bank account anymore.,Stage_1,close_account
+"I'm saddened to learn of that , but I undersand . Very well , I will help you close your account.",your services are really bad . i don't want to use my bank account anymore.,Stage_1,close_account
+"I see , I will help you close your bank account with us. Do you mind providing an explanation as to why you would want to close your account ?",i want you to close my account,Stage_1,close_account
+I will assist you in closing your account.,assist me in the process of closing my account,Stage_1,close_account
+"I understand , I will guide you through the process of closing your account.",i need your assistance in closing my account,Stage_1,close_account
+"I will , but have you considered the implications of your account removal?",help me remove my account,Stage_1,close_account
+I see . Could you tell us why you won't be using our services anymore? After that I will help you close your account.,i will not be using your services again so help me close my account.,Stage_1,close_account
+"Very well . However, I would like to ask you the reason why  you would close your account with us , should you not mind .",help me close my account,Stage_1,close_account
+"Of course, I'll guide you through the process of closing your account. Before we proceed, have you considered all the implications of closing your account?",i need your help closing my account,Stage_1,close_account
+"Understood, I'll assist you in closing your account promptly.",i really need to close my account,Stage_1,close_account
+I understand . i will check the accounts related to you in the system .,"No , help me close my account.",Stage_2,close_account
+Very well . I will guide you through the process of closing your account. ,"I just need your help with closing my account , nothing else.",Stage_2,close_account
+I understand. I will guide you through the process of closing your account.,Just help me close my account.,Stage_2,close_account
+I see . I will assist you in closing the account.,I have no reason . I just want to close it .,Stage_2,close_account
+Thank you for sharing the issue . I will assist you in closing your account . ,The main reason is that your customer service is poor .,Stage_2,close_account
+I see . I will now assist you in closing your account .,One of the reasons is beacause your fees are too high ,Stage_2,close_account
+Very well. I will now assist you in closing your account .,Because I am not using this bank account too frequently.,Stage_2,close_account
+Thank you for sharing. I will now assist you in closing your account .,I want to close it because I am inactive on this account.,Stage_2,close_account
+"If your balance is negative , you will either have to accept the debt or move it to another account . If it is not , you can transfer your money or take them out at an ATM.",what are the implications of closing my account?,Stage_2,close_account
+Thank you for sharing the issue . I will assist you in closing your account . ,Your customer service is poor .,Stage_2,close_account
+Very well. I will now assist you in closing your account . ,Your fees are too high .,Stage_2,close_account
+Thank you for sharing. I will now assist you in closing your account .,I am not using this bank account too frequently.,Stage_2,close_account
+We will try to improve. Let's close your account now.,I am inactive on this account.,Stage_2,close_account
+"If you close your account , you will be unable to use our services anymore.",What happens when I close my account ?,Stage_2,close_account
+"Let's look into this for you. Your account will be deleted instantly , so please be careful.",I submitted the request to close my account but haven't received confirmation.,Stage_2,close_account
+Account closure requests are usually processed immediatly.,How long does it take to process the account closure request?,Stage_2,close_account
+i'm sad to hear that . I will help you close you account now.,your sevices are poor,Stage_2,close_account
+"I'm sorry, let's proceed to the account closure.",you have wasted my time enough,Stage_2,close_account
+We will try to improve. Let's close your account now.,i don't like how you treat us customers,Stage_2,close_account
+I understand your reluctance. Let us proceed.,i dont want to tell you . help me close my account .,Stage_2,close_account
+We are quite sorry for your issues with us . Let's close your acocunt.,"i keep having the same issue with you , that does not get fixed.",Stage_2,close_account
+"I understand , I will tell our specialists about your issue . Let me help you close your account.",you ignore my customer support requests,Stage_2,close_account
+I'm sorry for that . Let's close your account .,you did not help me when i needed it,Stage_2,close_account
+"Oh, I see.. If you still want to proceed to the account closing , please continue this conversation.",your customer support agent is rude,Stage_2,close_account
+"We are working on that . If you wish to , you can close your account right now.",your fees are extremely high,Stage_2,close_account
+I see. Let's close your account.,i don't want to tell you .,Stage_2,close_account
+"Very well , let's close it.","no , help me close it.",Stage_2,close_account
+"Sure , let's help you close it .",i just want to close it,Stage_2,close_account
+"Very well , let's close your account then.","i'm not interested,  help me close it .",Stage_2,close_account
+I will let our team know . Thank you for providing a reason . Let's close your account.,i'm very unpleased with your services.,Stage_2,close_account
+I understand . Let's proceed with your account closure.,your services are of low quality,Stage_2,close_account
+"That's not something I could help with , sadly . If you wish to , let's proceed to close your account.",you don't have enough banks in my area,Stage_2,close_account
+"I understand , let's close it.","no , just let me close my account",Stage_2,close_account
+Sorry to hear that. We will try to improve. Let's close your account.,you don't help me when i need it .,Stage_2,close_account
+I see... Let's close your account now.,i just don't like you.,Stage_2,close_account
+I am glad I could help . Please consider using our services again in the future.,"oh, my account has been closed. Thanks!",Stage_3,close_account
+"I am glad I could help , but if you reconsider your choice , our team will be here for you!","Thank you, my account has been successfully closed.",Stage_3,close_account
+"I'm glad I could be of use ,  but please reconsider . We will be here to help you if you need to make another account.",thanks for finally closing my account,Stage_3,close_account
+"I'm happy i could help you close it . If you need anything else , feel free to ask.",finally . thank you.,Stage_3,close_account
+"No problem . If you need help , feel free to ask in the future.",it worked ! thanks,Stage_3,close_account
+"I'm quite happy I could be of use to you , but if you ever want to use our services again , feel free to make another account.",i'm happy i could finally close it .,Stage_3,close_account
+No problem . I will be here to help forevermore.,thanks for closing it .,Stage_3,close_account

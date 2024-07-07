@@ -1,0 +1,48 @@
+responses,questions,stage,intent
+"Certainly, we can update your email  . ",I need to change my email  .,Stage_1,update_email
+"Sure thing, let's get your email updated. ","Hello, I want to update my email.",Stage_1,update_email
+I'd be happy to assist with your email update. ,I need help changing my email  .,Stage_1,update_email
+"Of course , I will help you change your email . ",hey i wanna change my email from my account in the bank,Stage_1,update_email
+"Sure , I will help you remove the old email from your account.",i want to use another email for my bank account,Stage_1,update_email
+Of course you can . I will help you change your mail.,can i change the email bound to my account ?,Stage_1,update_email
+"It is possible , I will help you change your mail if you wish.",is it possible to change the email i use for my bank account ?,Stage_1,update_email
+"If you can't access the old one , I will help you change the email you currently use to a new one.",i can't access my old email i used for this bank account...,Stage_1,update_email
+"To change your email , I will be here to assist you .",what can i do to change my email?,Stage_1,update_email
+Sure! Let's change you old email to a new one !,my old email   is unusable now . help me change the one bound to my account.,Stage_1,update_email
+I'll help you change the email shortly .,help me change my old email   from the database to a new one.,Stage_1,update_email
+I will help you change you email.,please help me change my banking email  ,Stage_1,update_email
+I will provide assistance in order to change your email.,help me change my email  ,Stage_1,update_email
+"If you want to change your email , you will have to verify your identity and then proceed with the email change.",how should i proceed if i want to change my email on this account ?,Stage_1,update_email
+"Sure thing , let's get started in your email change process!",i want to change my mail ,Stage_1,update_email
+"Of course , let's start the process of modifying your email.",could you help me change my email?,Stage_1,update_email
+"I will help you change your mail , of course . Let's start .",i'd like your help with changing my email,Stage_1,update_email
+"It is possible to change the email, and I will help you do so .",is it possible to change my email for the bank account?,Stage_1,update_email
+Let's change your old email to a new one . I will guide you through the process.,i have an old email in this bank account . can i change it to my new one ?,Stage_1,update_email
+"If you don't have access to the old one , you can change the email used in the bank to a new one.",i don't have access to the old email i used on this bank account.,Stage_1,update_email
+Let's change the one from the system to your new email .,my email   has changed,Stage_1,update_email
+I'll help you change your email  .,my old email   can't be used anymore . can you help me change it ?,Stage_1,update_email
+"I'll help you change your old email , I will do my best to help you.",i would like to use another email for my bank account . can you help me ?,Stage_1,update_email
+Sure thing . I'll help you change your email shortly!,could you please help me change the email i use for my bank account ?,Stage_1,update_email
+I'll do my best to help you change it to a new one !,i don't have access anymore to the email i currently use for my account . can you help me change it ?,Stage_1,update_email
+"No problem, we'll update your email.",I need to change my email.,Stage_1,update_email
+Your email change request is noted.,"I understand, I will confirm my account info for the email change.",Stage_2,update_email
+I have confirmed your information. Your email will be updated shortly.,"I see, I need to update my email  .",Stage_2,update_email
+ the email change should reflect in your account instantly.,I updated my email but it's not showing in my account.,Stage_2,update_email
+The email change should have been completed.,did the email change work ?,Stage_2,update_email
+the email is changed. The system has updated your info.,is the email changed now ?,Stage_2,update_email
+"Yes , your email was sucessfully changed to a new one .",is my mail changed now ?,Stage_2,update_email
+your mail was updated without issues,was my email updated?,Stage_2,update_email
+The email change was performed without issues.,was my email changed ?,Stage_2,update_email
+"To check if the email change succeded , login again",how can i check if the email  was changed ?,Stage_2,update_email
+the email changing process was completed with no problems.,was my email change sucessful?,Stage_2,update_email
+The email change process was completed smoothly,did the email update process complete ?,Stage_2,update_email
+"The email should be updated instantly, but please allow a moment for the changes to take effect.",How long does it take to update my email  ?,Stage_2,update_email
+It looks like your new email has been updated successfully.,Can you confirm if my new email   is updated in the system?,Stage_2,update_email
+I apologize for any delays; there might have been an issue with the email confirmation.,I still see my old email in the account details.,Stage_3,update_email
+I am sorry I could not help...,I want to speak to someone to verify my updated email,Stage_3,update_email
+I'm happy i could help you . Thank you for using our services,"my email is updated now , thanks",Stage_3,update_email
+I'm glad the issue was resolved.,thanks a lot,Stage_3,update_email
+I'm happy i could help you.,"my email was changed, thanks",Stage_3,update_email
+"I'm glad to hear that . If you need any further assistance, let me know!",my mail   was changed ,Stage_3,update_email
+"No worries , I'm glad I could help you !",thanks for changing my email   for me,Stage_3,update_email
+I'm happy I could help you .,thank you for changing my mail  ,Stage_3,update_email

@@ -1,0 +1,68 @@
+responses,questions,stage,intent
+I'm sorry to hear that. Let's try to locate your card. Can you remember where you last used your card?,I lost my card,Stage_1,card_loss
+I understand. Let's try to track your card down together. Do you recall the last place you used your card?,My card is missing.,Stage_1,card_loss
+"Of course, I'll do my best to assist you. Can you provide any details about where you might have misplaced your card?","Hello, I seem to have lost my card. Can you help?",Stage_1,card_loss
+"Absolutely, I'm here to help. Can you remember where  you made the last transaction with the card?",i need your help to look for my card,Stage_1,card_loss
+I'm here to help you. Let's start by retracing your steps. Can you think of any recent places you visited where you might have used your card?,i really need your help looking for my card,Stage_1,card_loss
+I'm sorry to hear that. Let's try and find your card . Do you remember when you last had your card ?,i can't find my credit card anywhere,Stage_1,card_loss
+That is sad to hear. Let's try and look for your card togehter . Do you have an idea on when you last used your card ?,i think i missplaced my card somewhere,Stage_1,card_loss
+"I see. Did you look for your card everywhere you could , in your house or in common places you usually store it ?",i can't seem to fin my card anywhere,Stage_1,card_loss
+"If you looked around eveywhere you could , and still can't find your card , try and remember when it was you last had your card .",i looked for my card everywhere but i can't find it .,Stage_1,card_loss
+"You might have lost your card , or it could have been stolen . Please try and remember when the last time you used your card was.",my card isn't in my wallet anywhere. please help !,Stage_1,card_loss
+That is concerning . Please try and remember when the last time you used your card was.,oh no ! i lost my wallet. it had my card inside,Stage_1,card_loss
+That is sad to hear. Let's try and think about when you last had your card .,"i lost my wallet , with my card inside !",Stage_1,card_loss
+"Could you try and remember when you last had your card ? I will help you look for it , if possible.",i can't find my wallet anywhere ! my card was inside it !,Stage_1,card_loss
+"You might have misplaced your card somewhere , please try and look for your card in any places you could have misplaced it in.",my card isn't in my wallet anymore,Stage_1,card_loss
+"You can try to visit the store again , to check if they found your card .",i last used my card at my convenience store. ,Stage_2,card_loss
+"Think about where you went yesterday , and where you could have used your card.",I last had my card yesterday.,Stage_2,card_loss
+"Think about where you went today , before you came home . ",i know i had my card this morning when i left the house . ,Stage_2,card_loss
+Try and think about where you could have used your card today.,i last had my card before i left my house .,Stage_2,card_loss
+"I see . your card could be at the bar , then . Please try and call up that establishment , or visit it again.",i had it before i came from the bar,Stage_2,card_loss
+"Try and check with the place again, and see if they found your card.","i know i used it at the bar , before i left",Stage_2,card_loss
+"your card could be on the bus , then . Try and call up the bus company , maybe they found it.",i used it to pay for the bus,Stage_2,card_loss
+"your card could be stolen , or the bus company might have found your card . Please try and call them.",i payed for the bus with it .,Stage_2,card_loss
+"Try and visit the gym again , and check whether they found your card or not .",i last used it at the gym,Stage_2,card_loss
+Please think about where you made that transaction. Try and visit that place again.,my last transaction was made a few hours ago,Stage_2,card_loss
+"Try and visit the store again , your card could have slipped from your pocket.",i paid for a few products at the convenience store,Stage_2,card_loss
+"If you bought online products with it , it might still be in your home . Try and look for it .","i bought a few things online last time , yesterday",Stage_2,card_loss
+"your card might still be in your home , if you bought online products . Try and look around.",i last used for online purchases,Stage_2,card_loss
+I understand . You could try looking around the area of the gym .,i called my gym and they said they haven't found it yet.,Stage_2,card_loss
+Maybe you could look around . It is possible you could have dropped it when walking around the street.,i visited my convenience store and they said they haven't found it yet.,Stage_2,card_loss
+"I understand , still , please try and look for it . You could find it .",i went back to the bar and couldn't find it there,Stage_2,card_loss
+"I would recommend reporting it to the bank . After this conversation is over , I will ask you if you want to make a report for your missing card.",the bus company said they can't help me with this . what can i do ?,Stage_2,card_loss
+Please try and look around the area.,it 's not at the store.,Stage_2,card_loss
+"You could try and look around the places you visited today. If not , you could make a report to the bank.","i looked around in my house , and it isn't here.",Stage_2,card_loss
+I understand your frustration.You could have lost it in many places . It's still possible to find it .,"i looked around at the store i visited , and it's not there. ",Stage_2,card_loss
+"You could continue trying to look for it , should you wish to . If not , we will do our best to assist you further .",i searched the area around the place i lost it and it isn't there,Stage_2,card_loss
+"I understand . If you want to give up searching and block your card , I will take the necessary procedures.","it's not in the store , or anywhere near it.",Stage_2,card_loss
+"It's quite sad to hear that . If you do not wish to continue your search , I will help you however I can .",the bus company said it's my fault i lost it . they can't help me.,Stage_2,card_loss
+"I understand . I am sorry to hear that . If you need any other assistance , please let me know .",i did not receive any help from the bus company,Stage_2,card_loss
+I apologise . Do you want to continue your search ? It is still possible to find it.,i did not find it at the gym,Stage_2,card_loss
+I see. Please try and look around some more ?,i couldn't find it at my store ,Stage_2,card_loss
+You could ask the people working there for assistance.,i looked around everywhere near the convenience store.,Stage_2,card_loss
+"I understand , please try to be thorough with your search. It could be anywhere.",it's not near my gym,Stage_2,card_loss
+"I understand , I am sorry if you can't find it . If you require further assistance, let me know.",it's nowhere near or at the store i last used it at.,Stage_2,card_loss
+"Okay, it's a good start. Have you checked with the restaurant to see if they found your card?",I last used my card at the restaurant.,Stage_2,card_loss
+I understand . Could you check with the store to see if you might have missplaced it there ?,I last used it at the minimarket near my house . ,Stage_2,card_loss
+"I see . Please think about where you might have gone that day , and check those places.",Yesterday i had it .,Stage_2,card_loss
+Please call up the establishment to check if they found your card.,I last used it at the mall. ,Stage_2,card_loss
+"It is possible, please call up those places and check with them.",Yesterday i went to the gym and to the convenience store . Do you think I might have lost it there ?,Stage_2,card_loss
+Do you remember where you went that day ? It might still be there . ,I last used it 2 days ago.,Stage_2,card_loss
+"I understand , please check them and inform me if you found it .",I still haven't searched my jacket pockets . I will check with you after.,Stage_2,card_loss
+"I understand, it can be frustrating. Have you checked your wallet, pockets, and any other places where you usually keep your card?",I looked everywhere but couldn't find it.,Stage_2,card_loss
+" Check your home, workplace, and any other locations you visited recently. You may also want to contact any businesses where you used your card.",where should i look for my missing card ?,Stage_2,card_loss
+"Try retracing your steps. Look in places where you commonly use or store your card, such as your wallet, purse, or jacket pockets. ",where should i look for my card ?,Stage_2,card_loss
+Double-check all the usual spots and consider places you may have overlooked. Is there anywhere specific you haven't searched yet?,i still can't find it,Stage_2,card_loss
+I'm happy I could help you . Thank you for using our services!,"Thank you , I found my card.",Stage_3,card_loss
+I'm glad I was able to assist you. We appreciate your use of our services!,thanks,Stage_3,card_loss
+I'm glad I could assist you. We appreciate you utilizing our services!,"oh , i think i found it . thanks",Stage_3,card_loss
+I'm sorry to hear that .,i can't find it,Stage_3,card_loss
+I apologise for my lack of helping you in your issue,it's nowhere to be seen,Stage_3,card_loss
+I am sorry . I apologise for my incapacity of helping you,you could not help me,Stage_3,card_loss
+I'm sorry I could not help,it's not here,Stage_3,card_loss
+I apologise for my incapacity of being useful to you,i can't seem to find it,Stage_3,card_loss
+I'm happy I could help.,thanks . i found it,Stage_3,card_loss
+I'm glad you found it !,my card is here,Stage_3,card_loss
+That's good news . Thank you for utilising our services.,i found my card after all,Stage_3,card_loss
+Happy to help . Please use our services again.,thanks for helping me find my card,Stage_3,card_loss
+Glad to be of use.,i'm happy i found my card,Stage_3,card_loss

@@ -1,0 +1,52 @@
+responses,questions,stage,intent
+"Absolutely, we can update your address. ",My address has changed.,Stage_1,card_address_modification
+I'd be happy to help with your address change.,"Hi, I need to update my address.",Stage_1,card_address_modification
+No problem at all. Let's change your address,I want to change my address.,Stage_1,card_address_modification
+Your address update request is noted.,"I moved to a new place, and I need to update my address.",Stage_1,card_address_modification
+"I understand , I will help you change your address.",I have to change the adress I currently have in my bank account,Stage_1,card_address_modification
+Of course . I will assist you in changing your address .,my adress from my account needs to change,Stage_1,card_address_modification
+"That's concerning , I will help you change your adress",i noticed the adress I have in my account is not the right one,Stage_1,card_address_modification
+"If you have moved places , let's change your adress from our system",I moved places recently and I want to update the adress I have in my account,Stage_1,card_address_modification
+"Very well , let's change your adress",I need to change the adress that is stored in the system,Stage_1,card_address_modification
+"I see , let's change your system adress",My adress from the system is wrong,Stage_1,card_address_modification
+"If you deem so , let's change your stored adress.",I have the wrong adress in the system data,Stage_1,card_address_modification
+I see . Let's change your address .,My adress in the banking app is incorrect,Stage_1,card_address_modification
+Let's update your adress then!,I moved to another place recently and I want to update my adress,Stage_1,card_address_modification
+"If the adress is wrong , let's change it to your correct adress.",I noticed there's a wrong adress in my data ,Stage_1,card_address_modification
+"If the address is wrong , let's replace it .",My data contains a wrong adress,Stage_1,card_address_modification
+Let's change the address to a correct one.,My adress is wrong in your data,Stage_1,card_address_modification
+"I understand , let's change the address .",i want to change the adress that is bound to my account,Stage_1,card_address_modification
+Let's replace your adress .,I'd like to remove the old adress and replace it with another,Stage_1,card_address_modification
+I will help you replace your address with another one.,My current adress has changed,Stage_1,card_address_modification
+let's replace your address .,adress has changed,Stage_1,card_address_modification
+"I understand , changing your adress is important when you moved places",i moved adresses recently,Stage_1,card_address_modification
+"If you moved, let's change your stored adress ",i live somewhere else . i want to update my adress,Stage_1,card_address_modification
+Let's update your address ,i moved places . time to update my adress,Stage_1,card_address_modification
+Your info was confirmed. The adress change process was started.,"sure , i will confirm any info you need for this",Stage_2,card_address_modification
+Information confirmation completed . The  address change process can now begin.,what info do you need me to confirm?,Stage_2,card_address_modification
+Thank you for your cooperation .Let us begin your address change process,let's confirm whatever,Stage_2,card_address_modification
+"I  understand , let's change your adress.",i am the owner of this account,Stage_2,card_address_modification
+the  address change process should be completed now.,i will confirm whatever you need,Stage_2,card_address_modification
+your address  should be changed now,is my adress changed,Stage_2,card_address_modification
+"yes , your address was changed ",was my address changed,Stage_2,card_address_modification
+"i prompted your change request to the system , and your address should be changed now",was my old adress changed?,Stage_2,card_address_modification
+your new adress should be bound to your account now .,is my new adress in now ?,Stage_2,card_address_modification
+"yes , the new adress should be in the system now.",is my new adress in the system?,Stage_2,card_address_modification
+Your old adress should have been replaced by now.,was my old address replaced ?,Stage_2,card_address_modification
+"yes , the process of changing your address has been completed without issues",is the process of changing my adress complete ?,Stage_2,card_address_modification
+the address change process should have been completed already . Give it a few minutes just in case.,how long does it take to change my address ?,Stage_2,card_address_modification
+The  address change should have been made,is the address change done ?,Stage_2,card_address_modification
+Your info has been confirmed. The address update will be processed shortly.,"I understand, I will confirm my  info for the address update.",Stage_2,card_address_modification
+I have successfully confirmed your info. We are updating your address now.,"I see, I need to change my address details.",Stage_2,card_address_modification
+Please allow a few minutes for the address change to take effect.,I updated my address but it's not reflecting in my account.,Stage_2,card_address_modification
+"The address change should be processed instantly, but give it a moment just in case.",How long does it take to update my address?,Stage_2,card_address_modification
+It appears your new address has been updated.,Can you check if my new address is updated in the system?,Stage_2,card_address_modification
+I apologize for any inconvenience; there may have been an issue with the address confirmation.,I still see my old address in the account details.,Stage_3,card_address_modification
+Happy to help .I will be here whenever you need me.,thanks for your help to change my address,Stage_3,card_address_modification
+Always here to help . I'm glad I could be of use.,thanks for your assistance in changing my address,Stage_3,card_address_modification
+"No problem , we are happy to help you.",my adress was changed. thank you.,Stage_3,card_address_modification
+Always a pleasure to provide our services to you.,my adress was sucesfully changed,Stage_3,card_address_modification
+"No problem , I am happy I could help you",thanks for changing my address,Stage_3,card_address_modification
+"I apologise , I will try to do better next time.",you couldn't help me change my address after all..,Stage_3,card_address_modification
+"Sorry , there might have been an issue in the system.",why is my address not changed?,Stage_3,card_address_modification
+Sorry for the inconvenience . You could try again if you wish.,my address is not changed!,Stage_3,card_address_modification
