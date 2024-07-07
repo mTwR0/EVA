@@ -1,0 +1,21 @@
+{
+  "greetings": [
+    "hello",
+    "hi",
+    "hey"
+  ],
+  "goodbyes": [
+    "bye",
+    "see you",
+    "goodbye",
+    "farewell"
+  ],
+  "questions": [
+    "how",
+    "why",
+    "what",
+    "when",
+    "where",
+    "are you sure"
+  ]
+}
