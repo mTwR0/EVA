@@ -1,7 +1,7 @@
 # Basic Banking System with AI Integration
 
 
-### Note : The project is for my college graduation paper . You are welcome to use it however you wish , but it is overcomplicated for no apparent reason . I should really re-make and clean this mess.
+### Note : The project is for my college graduation paper . This was made to learn about AI , so you are welcome to use it however you wish , but it is overcomplicated for no apparent reason .
 
 
 
@@ -30,9 +30,9 @@ The first AI implementation is a conversational model capable of interacting wit
 
 
 If the user selects the option to chat with the EVA chatbot:
-- The user is asked if he wants to communicate by voice or text and in which language (Romanian or English).
-- The user expresses his problem either in writing or verbally (in the case of voice communication, the input is transcribed into text)
-- The system checks if the user's input matches one of a list of inputs stored in a JSON file, ordered by categories and stages (eg "card_loss" with conversation stages).
+- The user is asked if they want to communicate by voice or text and in which language (Romanian or English).
+- The user expresses their problem either in writing or verbally (in the case of voice communication, the input is transcribed into text)
+- The system checks if the user's input matches one of a list of inputs stored `user_utterance.json`, ordered by categories and stages (eg "card_loss" with conversation stages).
 - Based on this match, the category and stage of the conversation is identified:
   - Stage 1: Description of the initial problem (eg "I lost my card").
   - Stage 2: The detailed conversation about the problem (eg "I last used it 2 days ago").
