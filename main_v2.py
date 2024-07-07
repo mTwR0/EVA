@@ -140,15 +140,15 @@ from transformers import AutoTokenizer ,AutoModelForSeq2SeqLM
 from sistem_bancar import personal_info_check ,update_personal_info,generate_report,delete_user_file
 
 model_id = "facebook/blenderbot_small-90M"
-model_path=r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\subsets\final'
-model_path_for_card_loss=r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\subsets\final_card_loss'
-tokenizer=r"D:\EVA PROJECT\EVA_VENV\EVA\hugging_face\blenderbot_small-90M"
+model_path=r''
+model_path_for_card_loss=r''
+tokenizer=r""
 model=AutoModelForSeq2SeqLM.from_pretrained(model_path)
 tokenizer=AutoTokenizer.from_pretrained(tokenizer)
 
 
-out=r"D:\EVA PROJECT\EVA\outputs_lore"
-EVA_AUDIO_OUTPUT_PATH=r"D:\EVA PROJECT\EVA_VENV\EVA\output.wav"
+out=r""
+EVA_AUDIO_OUTPUT_PATH=r""
 pygame.init()
 
 responses=[]
@@ -166,11 +166,11 @@ def remove_spaces(text):
 from mtranslate import translate as mtranslate_translate
 
 def chat_bot_v2(lang):
-    model_path=r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\subsets\final'
-    tokenizer=r"D:\EVA PROJECT\EVA_VENV\EVA\hugging_face\blenderbot_small-90M"
+    model_path=r''
+    tokenizer=r""
     model=AutoModelForSeq2SeqLM.from_pretrained(model_path)
     tokenizer=AutoTokenizer.from_pretrained(tokenizer)
-    model_path_for_card_loss=r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\subsets\final_card_loss'
+    model_path_for_card_loss=r''
 
     user_utt: dict = load_json("user_utterance.json")
     sadpath=0
@@ -201,7 +201,7 @@ def chat_bot_v2(lang):
                 if solved=='y':
                     print("EVA: Thank you for using our services. Have a great day!")
                     user_utt[global_category]['Stage_3'].append(user_input)
-                    save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json", user_utt)
+                    save_json(r"", user_utt)
                     if global_category=='card_loss':
                         report_input=input("SYSTEM : Do you want to generate a report for your missing card? (y/n) : ")
                         if report_input=='y':
@@ -260,7 +260,7 @@ def chat_bot_v2(lang):
                             print(f"You chose category '{global_category}'.")
                             
                         user_utt[global_category]["Stage_1"].append(user_input)
-                        save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                        save_json(r"",user_utt)
 
                         break
                     bad=1
@@ -293,7 +293,7 @@ def chat_bot_v2(lang):
                                         global_category = choose_category(user_utt)
                                         print(f"You chose category '{global_category}'.")
                                         user_utt[global_category]["Stage_1"].append(user_input)
-                                        save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                                        save_json(r"",user_utt)
                                     break
                                 else:
                                     bad=1
@@ -397,7 +397,7 @@ def chat_bot_v2(lang):
                 last_stage='Stage_2' 
             if last_stage=='Stage_2' and loop_nr!=1:
                 user_utt[global_category][last_stage].append(user_input)
-                save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                save_json(r"",user_utt)
         
         else:
 
@@ -422,7 +422,7 @@ def chat_bot_v2(lang):
                 if solved=='y':
                     print("EVA: Multumim ca ai folosit serviciile noastre!")
                     user_utt[global_category]['Stage_3'].append(user_input)
-                    save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json", user_utt)
+                    save_json(r"", user_utt)
                     if global_category=='card_loss':
                         report_input=input("SYSTEM : Vrei sa generezi un raport pentru cardul tau pierdut? (y/n) : ")
                         if report_input=='y':
@@ -480,7 +480,7 @@ def chat_bot_v2(lang):
                             global_category = choose_category(user_utt)
                             print(f"Ai ales categoria '{global_category}'.")
                         user_utt[global_category]["Stage_1"].append(user_input)
-                        save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                        save_json(r"",user_utt)
                         break
                     bad=1
                     if proper_start=='n':
@@ -516,7 +516,7 @@ def chat_bot_v2(lang):
                                         global_category = choose_category(user_utt)
                                         print(f"Ai ales categoria '{global_category}'.")
                                         user_utt[global_category]["Stage_1"].append(user_input)
-                                        save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                                        save_json(r"",user_utt)
                                     break
                                 else:
                                     bad=1
@@ -659,7 +659,7 @@ def chat_bot_v2(lang):
                 last_stage='Stage_2' 
             if last_stage=='Stage_2' and loop_nr!=1:
                 user_utt[global_category][last_stage].append(user_input)
-                save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                save_json(r"",user_utt)
         
 
 
@@ -683,11 +683,11 @@ def generate_response(model, tokenizer, input_text,stage=None, intent=None, repe
 
 
 def chat_bot_text(lang):
-    model_path=r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\subsets\final'
-    tokenizer=r"D:\EVA PROJECT\EVA_VENV\EVA\hugging_face\blenderbot_small-90M"
+    model_path=r''
+    tokenizer=r""
     model=AutoModelForSeq2SeqLM.from_pretrained(model_path)
     tokenizer=AutoTokenizer.from_pretrained(tokenizer)
-    model_path_for_card_loss=r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\subsets\final_card_loss'
+    model_path_for_card_loss=r''
 
     user_utt: dict = load_json("user_utterance.json")
     sadpath=0
@@ -724,7 +724,7 @@ def chat_bot_text(lang):
                 if solved=='y':
                     print("EVA: Thank you for using our services. Have a great day!")
                     user_utt[global_category]['Stage_3'].append(user_input)
-                    save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json", user_utt)
+                    save_json(r"", user_utt)
                     if global_category=='card_loss':
                         report_input=input("SYSTEM : Do you want to generate a report for your missing card? (y/n) : ")
                         if report_input=='y':
@@ -783,7 +783,7 @@ def chat_bot_text(lang):
                             print(f"You chose category '{global_category}'.")
                             
                         user_utt[global_category]["Stage_1"].append(user_input)
-                        save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                        save_json(r"",user_utt)
 
                         break
                     bad=1
@@ -816,7 +816,7 @@ def chat_bot_text(lang):
                                         global_category = choose_category(user_utt)
                                         print(f"You chose category '{global_category}'.")
                                         user_utt[global_category]["Stage_1"].append(user_input)
-                                        save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                                        save_json(r"",user_utt)
                                     break
                                 else:
                                     bad=1
@@ -915,7 +915,7 @@ def chat_bot_text(lang):
                 last_stage='Stage_2' 
             if last_stage=='Stage_2' and loop_nr!=1:
                 user_utt[global_category][last_stage].append(user_input)
-                save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                save_json(r"",user_utt)
         else:
             loop_nr+=1
             
@@ -940,7 +940,7 @@ def chat_bot_text(lang):
                 if solved=='y':
                     print("EVA: Multumim ca ai folosit serviciile noastre!")
                     user_utt[global_category]['Stage_3'].append(user_input)
-                    save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json", user_utt)
+                    save_json(r"", user_utt)
                     if global_category=='card_loss':
                         report_input=input("SYSTEM : Vrei sa generezi un raport pentru cardul tau pierdut? (y/n) : ")
                         if report_input=='y':
@@ -1002,7 +1002,7 @@ def chat_bot_text(lang):
                             print(f"Ai ales categoria '{global_category}'.")
                             
                         user_utt[global_category]["Stage_1"].append(user_input)
-                        save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                        save_json(r"",user_utt)
 
                         break
                     bad=1
@@ -1039,7 +1039,7 @@ def chat_bot_text(lang):
                                         global_category = choose_category(user_utt)
                                         print(f"Ai ales categoria '{global_category}'.")
                                         user_utt[global_category]["Stage_1"].append(user_input)
-                                        save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                                        save_json(r"",user_utt)
                                     break
                                 else:
                                     bad=1
@@ -1148,7 +1148,7 @@ def chat_bot_text(lang):
                 last_stage='Stage_2' 
             if last_stage=='Stage_2' and loop_nr!=1:
                 user_utt[global_category][last_stage].append(user_input)
-                save_json(r"D:\EVA PROJECT\EVA_VENV\EVA\user_utterance.json",user_utt)
+                save_json(r"",user_utt)
         
 
 from unidecode import unidecode
@@ -1167,7 +1167,7 @@ if alegere_model==2:
             ro_en='en'
             ok=0
             print("SYSTEM : The program will run in the english language mode.")
-            my_sound = pygame.mixer.Sound(r"D:\EVA PROJECT\EVA_VENV\EVA\_mesaje_startup\engleza\en_voice_or_text.wav")
+            my_sound = pygame.mixer.Sound(r"")
             my_sound.play()
             while pygame.mixer.get_busy():
                 time.sleep(0.1)
@@ -1178,7 +1178,7 @@ if alegere_model==2:
                     ok2=0
                     voice_text='voice'
                     print("SYSTEM : The program will run in voice mode.")
-                    my_sound = pygame.mixer.Sound(r"D:\EVA PROJECT\EVA_VENV\EVA\_mesaje_startup\engleza\en_not_human.wav")
+                    my_sound = pygame.mixer.Sound(r"")
                     print("EVA : Greetings , I am EVA , a chatbot designed to assist you . Please keep in mind that I am not a real human .")                
                     my_sound.play()
                     while pygame.mixer.get_busy():
@@ -1198,7 +1198,7 @@ if alegere_model==2:
             
             print("SYSTEM : Programul va rula in modul de limba romana.")
             
-            my_sound = pygame.mixer.Sound(r"D:\EVA PROJECT\EVA_VENV\EVA\_mesaje_startup\romana\ro_voice_or_text.wav")
+            my_sound = pygame.mixer.Sound(r"")
             my_sound.play()
             while pygame.mixer.get_busy():
                 time.sleep(0.1)
@@ -1210,7 +1210,7 @@ if alegere_model==2:
                     voice_text='voice'
                     print("SYSTEM : Programul va rula in modul de voce.")                   
                     print("EVA : Buna ziua , eu sunt EVA , un asistent virtual creat pentru a va ajuta . Va rog sa tineti minte ca nu sunt o persoana adevarata.")
-                    my_sound = pygame.mixer.Sound(r"D:\EVA PROJECT\EVA_VENV\EVA\_mesaje_startup\romana\ro_not_human.wav")
+                    my_sound = pygame.mixer.Sound(r"")
                     my_sound.play()
                     while pygame.mixer.get_busy():
                         time.sleep(0.1)
@@ -1232,7 +1232,7 @@ if alegere_model==2:
 
 
     if voice_text == 'voice':
-        with open(f"D:\\EVA PROJECT\\EVA_VENV\\EVA\\outputs_lore\\{ro_en}_testare_voice_conv_{today_date_for_filename}.txt", 'w') as f:
+        with open(f"......{ro_en}...........{today_date_for_filename}.txt", 'w') as f:
             f.write(f"Voice log {today_date}.")
             f.write('\nUser:\n')
             i = 1
@@ -1252,7 +1252,7 @@ if alegere_model==2:
 
                 
     else:
-        with open(f"D:\\EVA PROJECT\\EVA_VENV\\EVA\\outputs_lore\\{ro_en}_testare_text_conv_{today_date_for_filename}.txt", 'w') as f:
+        with open(f"........{ro_en}..........{today_date_for_filename}.txt", 'w') as f:
             f.write(f"Text log {today_date}.")
             f.write('\nUser:\n')
             i = 1
