@@ -2,8 +2,8 @@
 from transformers import AutoTokenizer ,AutoModelForSeq2SeqLM
 
 
-tokenizer=r"D:\EVA PROJECT\EVA_VENV\EVA\hugging_face\blenderbot_small-90M"
-model_path=r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\subsets\final_card_loss'
+tokenizer=r""
+model_path=r''
 
 
 model=AutoModelForSeq2SeqLM.from_pretrained(model_path)
