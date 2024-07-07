@@ -1,10 +1,23 @@
 # Basic Banking System with AI Integration
 
+
+### Note : The project is for my college graduation paper . You are welcome to use it however you wish , but it is overcomplicated for no apparent reason . I should really re-make and clean this mess.
+
+
+
 ## Overview
 ![image](https://github.com/mTwR0/EVA/assets/147711036/90b81693-1751-4f85-9496-3b342dbe1d58)
 
 
 This project involves the development of a basic banking system that simulates fundamental functionalities of a mobile banking application. Users can create accounts, authenticate, and manage their respective accounts. Upon authentication, users have the option to interact with one of two available AI implementations.
+
+The conversational AI model is `blenderbot_small-90M` which can be found here : https://huggingface.co/facebook/blenderbot_small-90M
+
+The summarization AI model is `MBZUAI/LaMini-Flan-T5-248M` which can be found here : https://huggingface.co/MBZUAI/LaMini-Flan-T5-248M
+
+The voice model is `speechbrain/tts-tacotron2-ljspeech` which can be found here : https://huggingface.co/speechbrain/tts-tacotron2-ljspeech
+
+
 
 ### AI Implementations
 
@@ -30,6 +43,8 @@ If the user selects the option to chat with the EVA chatbot:
   - If the opening questions do not match any category, the user is guided to enter an appropriate opening question.
 Depending on the identified category, various operations are performed, such as changing the address, the system checking the ownership of the account, checking whether the user knows the information that was used to create the account. After verification, the user data in the text file is updated according to the user's requirements.
 
+The model itself is used in `main_v2.py` .  
+
 #### 2. Summarization AI Model
 
 
@@ -43,27 +58,31 @@ If the user selects the document summary option:
 ![image](https://github.com/mTwR0/EVA/assets/147711036/e767552e-98e1-4b30-b4a4-7babc9600e49)
 ![image](https://github.com/mTwR0/EVA/assets/147711036/45346c9b-2778-464b-83b6-4e4703f53e6a)
 
+The function for this is written in `sumarizare.py`
 
 ### Training process
 
-To develop and optimize the conversational model within the banking system, I followed a training methodology on specific data. The training script is schinbare_antrenare.py . The other trainign script blenderbot_training.py is done a bit differently and has worse results for my task . 
+The training script is `schinbare_antrenare.py` . The other training script , `blenderbot_training.py` is done a bit differently and has worse results for my task . 
 
+TLDR: I loop , one by one , through the excel documents and format them with  `ConversationDataset`  . For each of them I also split the data 80-20 , train for the specified epochs and calculate loss . After all this , model params are updated.
 
 - Implementation of the Conversational Dataset:
-- I defined a class to handle and process data from CSV files. It uses the tokenization provided by a specific tokenizer to prepare question and answer pairs for training.
+- `ConversationDataset`:  handles and processes data from CSV files. Tokenizes data to prepare question and answer pairs for training.
   - Tokenization and Data Preprocessing:
   - Each question-answer pair is tokenized to be compatible with the model. Tokenization includes truncation and padding of sequences to ensure uniform sizes for training.
 - Datasets for Training and Validation:
   - The data is split into a training set and a validation set using a proportion of 80% for training and 20% for validation. This separation ensures that the model is evaluated on unseen data to measure its overall performance.
 - Configuration of Training Parameters:
-  - I configured training parameters using Seq2SeqTrainingArguments, which includes settings for number of epochs, batch size, learning rate, model saving strategies and others. 
+  - I configured training parameters using `Seq2SeqTrainingArguments`, which includes settings for number of epochs, batch size, learning rate, model saving strategies and others. 
 - Training the Model:
-  - Seq2SeqLM model is trained using Seq2SeqTrainer. At each epoch, the model is trained on the training data set . After the dataset is finished, it is evaluated on the validation dataset to measure performance.
+  - `Seq2SeqLM` model is trained using `Seq2SeqTrainer`. At each epoch, the model is trained on the training data set . After the dataset is finished, it is evaluated on the validation dataset to measure performance.
 - Performance Evaluation:
   - After finishing each training data set, the model is evaluated on the validation data set to calculate the loss. This process helps to monitor and adjust the performance of the model during training.
 
 ### Used dataset
+Data set is question and answer pairs made by me . It is made specifically with this task in mind , and accounts for any operations I do in my code , and that are handled by the system .  
 The data used to train the conversation model within the banking system is structured in a format that allows the model to learn to respond appropriately and coherently to various requests and questions from users.
+
 Data Structure:
 - Columns of the Data Set:
   - responses: The model's predefined responses, corresponding to the user's questions and requests.
