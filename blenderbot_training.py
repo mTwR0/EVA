@@ -13,14 +13,6 @@ TrainingArguments, Trainer
 from langchain.llms.huggingface_pipeline import HuggingFacePipeline
 from langchain.chains import LLMChain
 from transformers import AutoTokenizer ,pipeline,AutoModelForSeq2SeqLM
-
-# sursa https://github.com/lordtt13/transformers-experiments/blob/master/Custom%20Tasks/fine-tune-blenderbot_small-for-summarization.ipynb
-# class transformers.BlenderbotSmallConfig --> configul
-# Configuration objects inherit from PretrainedConfig and can be used to control the model outputs. Read the documentation from PretrainedConfig for more information.
-
-# scop --> modifica config si foloseste-l in model cumva pt alte rezultate
-# config 
-
 from transformers import Trainer
 
 # training
@@ -30,7 +22,7 @@ print()
 print(" The training process will be done on CPU .")
 print()
 device = 'cuda' if cuda.is_available() else 'cpu'
-df=pd.read_csv(r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\last_ver.csv', encoding='latin1')
+df=pd.read_csv(r'', encoding='latin1')
 print(df.head())
 
 
@@ -91,8 +83,7 @@ class customDataset(Dataset):
 
 
 model_id = "facebook/blenderbot_small-90M"
-model_path=r"D:\EVA PROJECT\EVA_VENV\EVA\hugging_face\blenderbot_small-90M"
-#model_path=r"D:\EVA PROJECT\EVA\_datasets\incercare_antrenare\model_nou2_antrenat_bancar"
+model_path=""
 
 TRAIN_BATCH_SIZE = 8
 VALID_BATCH_SIZE = 2 
@@ -109,7 +100,7 @@ np.random.seed(SEED)
 torch.backends.cudnn.deterministic = True
 print("SEED generat ...")
 print()
-tokenizer=BlenderbotSmallTokenizer.from_pretrained(r"D:\EVA PROJECT\EVA_VENV\EVA\hugging_face\blenderbot_small-90M")
+tokenizer=BlenderbotSmallTokenizer.from_pretrained(r"")
 #tokenizer=BlenderbotSmallTokenizer.from_pretrained(model_path)
 df = df[['questions','responses']]
 #print(df.head())
@@ -165,7 +156,7 @@ model = model.to(device)
 # o clasa de optimizator Adam folosind parametrii modelului --> ajusteaza rata de invatare in functie de istoric ,normalizeaza rata de invatare , 
 optimizer = torch.optim.Adam(params =  model.parameters(), lr = LEARNING_RATE)
 
-args = TrainingArguments(output_dir=r"D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\model_nou4_antrenat_bancar",
+args = TrainingArguments(output_dir=r"",
                          seed=42,
                          num_train_epochs=10,
                          per_device_train_batch_size=8,  
@@ -234,7 +225,7 @@ print()
 print("Salvam modelul...")
 print()
 
-trainer.save_model(r"D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou")
+trainer.save_model(r"")
 
 # data frame cu rezultatele validarii 
 print()
