@@ -7,9 +7,9 @@ import os
 
 SEED = 42
 DEVICE = 'cpu'
-TRAINING_DIR = r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\subsets'
-LOGS_DIR = r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\new training\logs'
-OUTPUT_DIR = r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\subsets'
+TRAINING_DIR = r''
+LOGS_DIR = r''
+OUTPUT_DIR = r''
 REPETITION_PENALTY=1.2
 
 
@@ -93,8 +93,8 @@ from transformers import AutoTokenizer ,AutoModelForSeq2SeqLM
 
 def trainingProcess():
     set_seed(SEED)
-    model=r"D:\EVA PROJECT\EVA_VENV\EVA\hugging_face\blenderbot_small-90M"
-    tokenizer=r"D:\EVA PROJECT\EVA_VENV\EVA\hugging_face\blenderbot_small-90M"
+    model=r""
+    tokenizer=r""
     model=AutoModelForSeq2SeqLM.from_pretrained(model)
     tokenizer=AutoTokenizer.from_pretrained(tokenizer)
 
@@ -104,7 +104,7 @@ def trainingProcess():
         print(f"Training on subset: {csv_path}")
         model = train_on_subset(csv_path, model, tokenizer)
 
-    save_path = r'D:\EVA PROJECT\EVA_VENV\EVA\_datasets\incercare_antrenare\modificare csv din nou\subsets\final'
+    save_path = r''
     model.save_pretrained(save_path)
 
 trainingProcess()
