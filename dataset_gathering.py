@@ -1,7 +1,7 @@
 from datasets import load_dataset
 
 # Set the local cache directory
-cache_dir = r'C:\Users\Liviu\Desktop\EVA PROJECT\EVA PROJECT\_fine_tuning\datasets'
+cache_dir = r''
 
 # Load the dataset and specify the cache directory
 print("downloading...")
