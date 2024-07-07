@@ -50,8 +50,8 @@ def summarize_document(filepath, model_dir, max_length=512):
 
 def summarize():
     print()
-    directory = r'D:\EVA PROJECT\EVA_VENV\EVA\sumarizare'
-    model_dir = r'D:\EVA PROJECT\EVA_VENV\EVA\INCERCARE MODELE NOI\MBZUAI_LaMini-Flan-T5-248M'
+    directory = r''
+    model_dir = r''
     
     while True:
         documents = list_documents(directory)
