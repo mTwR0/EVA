@@ -1,0 +1,8 @@
+TTS
+transformers
+speechrecognition
+unidecode
+gtts
+spacy
+pygame
+mtranslate
