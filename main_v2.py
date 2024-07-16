@@ -1,3 +1,8 @@
+import subprocess
+def install_spacy_model(model):
+    subprocess.call(['python', '-m', 'spacy', 'download', model])
+
+install_spacy_model('en_core_web_sm')
 print()
 print(" _____ _   _  ___  \n|  ___| | | |/ _ \\ \n| |__ | | | / /_\\ \\\n|  __|| | | |  _  |\n| |___\ \\_/ / | | |\n\\____/ \\___/\\_| |_|")
 print()
