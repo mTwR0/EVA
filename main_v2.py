@@ -1,3 +1,4 @@
+import spacy
 import subprocess
 def install_spacy_model(model):
     subprocess.call(['python', '-m', 'spacy', 'download', model])
@@ -55,7 +56,7 @@ def save_json (file_path: str , data: dict):
     with open (file_path,'w') as file:
         json.dump(data,file,indent=2)
 
-import spacy
+
 nlp = spacy.load("en_core_web_sm")
 
 from difflib import get_close_matches
